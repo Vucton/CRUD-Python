@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'crud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'crudpython_db',
+        'USER': 'admin',
+        'PASSWORD': 'p2gpHeS396BLG7ZvNSIzp1ZPRiiRJDtH',
+        'HOST': 'dpg-cq9cm62ju9rs73b40qkg-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
 
